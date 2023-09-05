@@ -41,10 +41,15 @@ public class C03_Excel {
             Excel dosyasında herhangi bir hücrede değişiklik yaptıysanız excel'i kapatırken kaydetmeyiniz
          */
 
+    }
 
-
-
-
+    @Test
+    public void test02() throws IOException {
+        //Pratik çözüm
+        //1. satir 1. sutundaki veriyi yazdırınız
+        FileInputStream fis = new FileInputStream("src/test/java/resources/Capitals.xlsx");
+        Workbook workbook = WorkbookFactory.create(fis);
+        System.out.println(workbook.getSheet("Sheet1").getRow(0).getCell(0));//COUNTRY
 
     }
 }
