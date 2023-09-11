@@ -18,6 +18,7 @@ public class OpenSourcePage {
     @FindBy(xpath = "//button")
     public WebElement loginButton;
 
+    //DashBoard WebElementi
     @FindBy(xpath = "//h6")
     public WebElement verify;
 
