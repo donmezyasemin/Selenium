@@ -10,6 +10,11 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
 
 public class Driver {
+    private Driver(){
+        /*
+        SINGLETON PATTERN (Tekli kullanım) için gizli const.'ı private yaptık
+         */
+    }
     static WebDriver driver;
     public static WebDriver getDriver(){
         /*
