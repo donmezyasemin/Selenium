@@ -9,7 +9,7 @@ import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
 public class C01_PositifLoginTest {
-    @Test
+    @Test(groups = "smoke")
     public void positifTest() {
         //Name: US100201_Admin_Login
         //Description:

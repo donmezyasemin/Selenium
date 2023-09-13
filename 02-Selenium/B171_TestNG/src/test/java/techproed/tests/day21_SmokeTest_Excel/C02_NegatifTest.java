@@ -8,7 +8,7 @@ import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 
 public class C02_NegatifTest{
-    @Test
+    @Test(groups = "smoke")
     public void negatifTest() {
         /*
             Negatif test senaryolarında sayfaya giriş yapılamaması ile ilgi senaryoları oluşturmamız gerekir.
