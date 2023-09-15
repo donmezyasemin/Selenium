@@ -10,7 +10,11 @@ public class C02_DriverIlkTest {
     @Test
     public void test01() {
         Driver.getDriver().get("https://amazon.com");
-        Driver.getDriver().findElement(By.xpath("//*[.='Try different image']")).click();
+        try {
+            Driver.getDriver().findElement(By.xpath("//*[.='Try different image']")).click();
+        } catch (Exception e) {
+            System.out.println("Element çıkmadı");
+        }
         new AmazonPage().aramaKutusu.sendKeys("iphone", Keys.ENTER);
     }
 
